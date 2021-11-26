@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "Monoton";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fuentes/monoton.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "VT323";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fuentes/vt323.woff2) format("woff2");
+  font-display: swap;
+}
+.table {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: white;
+}
+
+* {
+  font-family: "VT323";
+  font-size: 24px;
+}
+
+body {
+  background-image: url("../img/fondo.webp");
+  /* Fuente de la imagen: https://pixabay.com/es/photos/amiga-c64-comodoro-computadora-4321211/*/
+  background-repeat: no-repeat;
+}
+
+.puntuaciones {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.puntuacionTabla {
+  color: #881400;
+  text-align: center;
+  width: 250px;
+}
+
+th {
+  background-color: #881400;
+  color: white;
+}
+
+tr {
+  background-color: #f2f2f2;
+}
+
+#monoton {
+  font-family: "Monoton";
+  color: white;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) {
+  form {
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 650px) {
+  iframe {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  iframe {
+    width: 300px;
+  }
+}
+.errorMsg {
+  color: #881400;
+  font-weight: bolder;
+}
+
+input {
+  background: transparent;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.centrar {
+  position: relative;
+}
+
+.boton {
+  background: #881400;
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
+  text-transform: uppercase;
+  margin-top: 4px;
+  padding: 8px;
+}
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+}
+
+form {
+  padding-top: 50px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 15px;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+}
+.nav-masthead .nav-link {
+  color: white;
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+a.nav-link {
+  display: inline-block;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+main.inner.cover #img {
+  width: 50%;
+}
+
+input#registro,
+input#login {
+  width: 100%;
+  margin-top: 15px;
+}
+
+input {
+  width: 100%;
+}
+
+div#botones {
+  display: flex;
+  flex-direction: column;
+}
+
+#botonVolver {
+  margin-top: 15px;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+}
+.contenedor .menu a {
+  text-decoration: none;
+  color: white;
+}
+.contenedor .menu a:hover {
+  color: black;
+  background-color: gray;
+}
+.contenedor .menu .selected {
+  border-radius: 50px;
+  background-color: aquamarine;
+  color: white;
+  padding: 8px;
+}
+.contenedor .menu .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  h3.seleccion {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .menu a:not(:last-child) {
+    display: none;
+  }
+
+  .menu .icon {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  .menu.responsive {
+    position: relative;
+  }
+
+  /*a:first-child {
+      margin-top: 10px;
+  }
+  */
+  .menu.responsive a {
+    display: block;
+  }
+
+  .centered {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: initial;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

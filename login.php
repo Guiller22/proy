@@ -76,11 +76,4 @@ session_start();
 
     </form>
     </div>
-    <script>
-        window.onload = function() {
-            document.getElementById("monoton").onclick = function() {
-                location.href = "index.php";
-            }
-        };
-    </script>
 </body>

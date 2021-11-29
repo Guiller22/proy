@@ -1,17 +1,7 @@
 <?php
 include('config.php');
 include('header.php');
-
-$usuario = $userClass->usuarioDatos($session_uid);
-$nombre = $usuario->usuario;
-$tipo = $usuario->tipo_usuario;
-
-$usuario = $userClass->usuarioDatos($session_uid);
-$nombre = $usuario->usuario;
-$db = getDB();
-$fecha = date("Y-m-d");
-$sentencia = $db->query("INSERT IGNORE INTO puntos(usuario, puntos1, fechaRecord)
-SELECT '$nombre', '0' , '$fecha' WHERE NOT EXISTS(SELECT 1 FROM puntos WHERE usuario = '$nombre')");
+include('iniciarPuntos.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

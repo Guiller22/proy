@@ -12,7 +12,7 @@ INSERT INTO usuarios (`contraseña`,`usuario`,`email`, `tipo_usuario`)
 VALUES (SHA2('123456', 256),"admin","guiillerrf@gmail.com", "admin");
 /*Tabla puntos para almacenarlos por usuario y juego*/
 CREATE TABLE IF NOT EXISTS puntos(
-	`usuario` varchar(50),
+	`usuario` varchar(50) unique,
     `puntos1` int(10),
 	`fechaRecord` date not null,
     FOREIGN KEY (usuario) REFERENCES usuarios(usuario)
